@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="1f33658419e747bf905a85931850a7d0" label="Priority Config" name="x_1966159_fcms_priority_cfg" type="collection">
+        <element label="Time Delay Threshold (hrs)" mandatory="true" name="time_delay_threshold_hrs" type="integer"/>
+        <element label="High Threshold" mandatory="true" name="high_threshold" type="integer"/>
+        <element label="Critical Threshold" mandatory="true" name="critical_threshold" type="integer"/>
+        <element label="Medium Threshold" mandatory="true" name="medium_threshold" type="integer"/>
+        <element display="true" label="Category" mandatory="true" max_length="100" name="category" type="string"/>
+    </element>
+</database>

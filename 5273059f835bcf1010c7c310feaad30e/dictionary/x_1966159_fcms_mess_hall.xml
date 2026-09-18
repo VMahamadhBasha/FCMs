@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="fdbbf2bc6756458681ff4f837d9ab01e" label="Mess Hall" name="x_1966159_fcms_mess_hall" type="collection">
+        <element label="Supervisor" mandatory="true" name="supervisor" reference="sys_user" type="reference"/>
+        <element label="Location" max_length="100" name="location" type="string"/>
+        <element label="Capacity" name="capacity" type="integer"/>
+        <element display="true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <index name="index">
+            <element name="supervisor"/>
+        </index>
+    </element>
+</database>

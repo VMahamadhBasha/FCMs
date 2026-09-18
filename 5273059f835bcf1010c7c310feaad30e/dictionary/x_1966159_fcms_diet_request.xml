@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="e9a925c2bb37493b8f6241807f61f88b" label="Diet / Allergy Request" name="x_1966159_fcms_diet_request" type="collection">
+        <element display="true" label="Student" mandatory="true" name="student" reference="x_1966159_fcms_student" type="reference"/>
+        <element label="Details" mandatory="true" max_length="4000" name="details" type="string"/>
+        <element label="Approved By" name="approved_by" reference="sys_user" type="reference"/>
+        <element default="pending" label="Approval Status" name="approval_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Under Review" sequence="4" value="under_review"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
+            </choice>
+        </element>
+        <element label="Request Type" mandatory="true" name="request_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Allergy Declaration" sequence="2" value="allergy_declaration"/>
+                <element inactive_on_update="false" label="Dietary Change" sequence="1" value="dietary_change"/>
+                <element inactive_on_update="false" label="Other" sequence="5" value="other"/>
+                <element inactive_on_update="false" label="Medical Diet" sequence="3" value="medical_diet"/>
+                <element inactive_on_update="false" label="Religious Diet" sequence="4" value="religious_diet"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="approved_by"/>
+        </index>
+        <index name="index2">
+            <element name="student"/>
+        </index>
+    </element>
+</database>

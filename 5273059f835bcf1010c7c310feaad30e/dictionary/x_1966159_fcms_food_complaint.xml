@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="ade47b812002414185fcca8ef6e88c4d" label="Food Complaint" name="x_1966159_fcms_food_complaint" type="collection">
+        <element default="new" label="State" mandatory="true" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="1" value="new"/>
+                <element inactive_on_update="false" label="Closed" sequence="5" value="closed"/>
+                <element inactive_on_update="false" label="On Hold" sequence="3" value="on_hold"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="6" value="cancelled"/>
+                <element inactive_on_update="false" label="Resolved" sequence="4" value="resolved"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in_progress"/>
+            </choice>
+        </element>
+        <element label="Feedback Eligible" name="feedback_eligible" type="boolean"/>
+        <element display="true" label="Number" max_length="40" name="number" read_only="true" read_only_option="instance_configured" type="string" unique="true"/>
+        <element label="Priority" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Low" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="Medium" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="Critical" sequence="1" value="1"/>
+            </choice>
+        </element>
+        <element label="Resolution Notes" max_length="4000" name="resolution_notes" type="string"/>
+        <element label="Meal Type" mandatory="true" name="meal_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Dinner" sequence="3" value="dinner"/>
+                <element inactive_on_update="false" label="Breakfast" sequence="1" value="breakfast"/>
+                <element inactive_on_update="false" label="Snack" sequence="4" value="snack"/>
+                <element inactive_on_update="false" label="Lunch" sequence="2" value="lunch"/>
+            </choice>
+        </element>
+        <element label="AI Confidence" name="ai_confidence" read_only="true" read_only_option="instance_configured" type="percent_complete"/>
+        <element label="Mess Hall" mandatory="true" name="mess_hall" reference="x_1966159_fcms_mess_hall" type="reference"/>
+        <element label="Use Case" mandatory="true" name="use_case" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Food Quality" sequence="1" value="food_quality"/>
+                <element inactive_on_update="false" label="Menu" sequence="4" value="menu"/>
+                <element inactive_on_update="false" label="Other" sequence="5" value="other"/>
+                <element inactive_on_update="false" label="Service" sequence="3" value="service"/>
+                <element inactive_on_update="false" label="Hygiene" sequence="2" value="hygiene"/>
+            </choice>
+        </element>
+        <element label="Problem Type" max_length="100" name="problem_type" type="string"/>
+        <element label="Student" mandatory="true" name="student" reference="x_1966159_fcms_student" type="reference"/>
+        <element label="Description" mandatory="true" max_length="4000" name="description" type="string"/>
+        <element label="Assigned Group" name="assigned_group" reference="sys_user_group" type="reference"/>
+        <element label="Base Problem" name="base_problem" reference="x_1966159_fcms_base_problem" type="reference"/>
+        <element label="AI Classification" max_length="100" name="ai_classification" read_only="true" read_only_option="instance_configured" type="string"/>
+        <element label="Assigned To" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Category" mandatory="true" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cleanliness" sequence="6" value="cleanliness"/>
+                <element inactive_on_update="false" label="Portion Size" sequence="3" value="portion_size"/>
+                <element inactive_on_update="false" label="Missing Item" sequence="9" value="missing_item"/>
+                <element inactive_on_update="false" label="Taste" sequence="1" value="taste"/>
+                <element inactive_on_update="false" label="Staff Behavior" sequence="7" value="staff_behavior"/>
+                <element inactive_on_update="false" label="Freshness" sequence="2" value="freshness"/>
+                <element inactive_on_update="false" label="Foreign Object" sequence="4" value="foreign_object"/>
+                <element inactive_on_update="false" label="Temperature" sequence="5" value="temperature"/>
+                <element inactive_on_update="false" label="Delay" sequence="8" value="delay"/>
+                <element inactive_on_update="false" label="Other" sequence="10" value="other"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="assigned_group"/>
+        </index>
+        <index name="index2">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index3">
+            <element name="base_problem"/>
+        </index>
+        <index name="index4">
+            <element name="mess_hall"/>
+        </index>
+        <index name="index5">
+            <element name="student"/>
+        </index>
+    </element>
+</database>

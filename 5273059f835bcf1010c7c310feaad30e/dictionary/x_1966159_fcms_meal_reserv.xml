@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="3c0198dd2a7045da85ca895023a9a628" label="Meal Reservation" name="x_1966159_fcms_meal_reserv" type="collection">
+        <element label="Meal Slot / Menu Item" mandatory="true" name="menu_item" reference="x_1966159_fcms_menu_item" type="reference"/>
+        <element label="Reservation Date" mandatory="true" name="reservation_date" type="glide_date"/>
+        <element display="true" label="Student" mandatory="true" name="student" reference="x_1966159_fcms_student" type="reference"/>
+        <element default="confirmed" label="Status" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Confirmed" sequence="1" value="confirmed"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="2" value="cancelled"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="No Show" sequence="4" value="no_show"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="menu_item"/>
+        </index>
+        <index name="index2">
+            <element name="student"/>
+        </index>
+    </element>
+</database>

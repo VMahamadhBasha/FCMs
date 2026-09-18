@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="aaeb6b07f59e44dfab3116fb7aebd1d7" label="Feedback" name="x_1966159_fcms_feedback" type="collection">
+        <element label="Base Problem" name="base_problem" reference="x_1966159_fcms_base_problem" type="reference"/>
+        <element label="Rating" mandatory="true" name="rating" type="integer"/>
+        <element display="true" label="Student" mandatory="true" name="student" reference="x_1966159_fcms_student" type="reference"/>
+        <element label="Comments" max_length="4000" name="comments" type="string"/>
+        <element label="Ticket" mandatory="true" name="ticket" reference="x_1966159_fcms_food_complaint" type="reference"/>
+        <element label="Resolution Satisfaction" mandatory="true" name="resolution_satisfaction" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Satisfied" sequence="2" value="satisfied"/>
+                <element inactive_on_update="false" label="Very Dissatisfied" sequence="5" value="very_dissatisfied"/>
+                <element inactive_on_update="false" label="Very Satisfied" sequence="1" value="very_satisfied"/>
+                <element inactive_on_update="false" label="Neutral" sequence="3" value="neutral"/>
+                <element inactive_on_update="false" label="Dissatisfied" sequence="4" value="dissatisfied"/>
+            </choice>
+        </element>
+        <element label="Submitted Date" name="submitted_date" read_only="true" read_only_option="instance_configured" type="glide_date_time"/>
+        <index name="index">
+            <element name="base_problem"/>
+        </index>
+        <index name="index2">
+            <element name="student"/>
+        </index>
+        <index name="index3">
+            <element name="ticket"/>
+        </index>
+    </element>
+</database>
