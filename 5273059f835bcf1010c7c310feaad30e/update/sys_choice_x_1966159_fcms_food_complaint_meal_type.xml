@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set action="INSERT_OR_UPDATE" apply_defaults="true" field="meal_type" table="x_1966159_fcms_food_complaint" version="3">
+    <sys_choice_set action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>e72e2b25e16148bfa76152e968b025bb</sys_id>
+      <element>meal_type</element>
+      <sys_update_name>sys_choice_x_1966159_fcms_food_complaint_meal_type</sys_update_name>
+      <name>x_1966159_fcms_food_complaint</name>
+      <sys_class_name>sys_choice_set</sys_class_name>
+      <sys_scope display_value="x_1966159_fcms">5273059f835bcf1010c7c310feaad30e</sys_scope>
+      <sys_package display_value="x_1966159_fcms" source="5273059f835bcf1010c7c310feaad30e">5273059f835bcf1010c7c310feaad30e</sys_package>
+      <sys_name>meal_type</sys_name>
+    </sys_choice_set>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>76405efd0c874b1eb1ebd97b83abcb16</sys_id>
+      <name>x_1966159_fcms_food_complaint</name>
+      <element>meal_type</element>
+      <label>Breakfast</label>
+      <value>breakfast</value>
+      <sequence>1</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>f22879be4f674b71ac65513121283de2</sys_id>
+      <name>x_1966159_fcms_food_complaint</name>
+      <element>meal_type</element>
+      <label>Lunch</label>
+      <value>lunch</value>
+      <sequence>2</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>0b048d3fef854324acb2d873c575261a</sys_id>
+      <name>x_1966159_fcms_food_complaint</name>
+      <element>meal_type</element>
+      <label>Dinner</label>
+      <value>dinner</value>
+      <sequence>3</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>bb268f0388dd4c4086e3f75bdd7a0592</sys_id>
+      <name>x_1966159_fcms_food_complaint</name>
+      <element>meal_type</element>
+      <label>Snack</label>
+      <value>snack</value>
+      <sequence>4</sequence>
+      <language>en</language>
+    </sys_choice>
+  </sys_choice_set>
+</record_update>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set action="INSERT_OR_UPDATE" apply_defaults="true" field="current_priority" table="x_1966159_fcms_base_problem" version="3">
+    <sys_choice_set action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>5a20ec34bfc448c6948ffde4a31b57c3</sys_id>
+      <element>current_priority</element>
+      <sys_update_name>sys_choice_x_1966159_fcms_base_problem_current_priority</sys_update_name>
+      <name>x_1966159_fcms_base_problem</name>
+      <sys_class_name>sys_choice_set</sys_class_name>
+      <sys_scope display_value="x_1966159_fcms">5273059f835bcf1010c7c310feaad30e</sys_scope>
+      <sys_package display_value="x_1966159_fcms" source="5273059f835bcf1010c7c310feaad30e">5273059f835bcf1010c7c310feaad30e</sys_package>
+      <sys_name>current_priority</sys_name>
+    </sys_choice_set>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>d404d2d63f9a4d66b2f768f28c0c7f07</sys_id>
+      <name>x_1966159_fcms_base_problem</name>
+      <element>current_priority</element>
+      <label>Critical</label>
+      <value>1</value>
+      <sequence>1</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>ef099f4291df42c1b98db68b58fbfb7e</sys_id>
+      <name>x_1966159_fcms_base_problem</name>
+      <element>current_priority</element>
+      <label>High</label>
+      <value>2</value>
+      <sequence>2</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>3503b30c3db247ffb39b01120e611129</sys_id>
+      <name>x_1966159_fcms_base_problem</name>
+      <element>current_priority</element>
+      <label>Medium</label>
+      <value>3</value>
+      <sequence>3</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>8964eaaea889406582368f8b0a9b0fd3</sys_id>
+      <name>x_1966159_fcms_base_problem</name>
+      <element>current_priority</element>
+      <label>Low</label>
+      <value>4</value>
+      <sequence>4</sequence>
+      <language>en</language>
+    </sys_choice>
+  </sys_choice_set>
+</record_update>

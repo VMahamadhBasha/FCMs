@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set action="INSERT_OR_UPDATE" apply_defaults="true" field="state" table="x_1966159_fcms_food_complaint" version="3">
+    <sys_choice_set action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>30ef44b736de4797a43834d5f8c4883f</sys_id>
+      <element>state</element>
+      <sys_update_name>sys_choice_x_1966159_fcms_food_complaint_state</sys_update_name>
+      <name>x_1966159_fcms_food_complaint</name>
+      <sys_class_name>sys_choice_set</sys_class_name>
+      <sys_scope display_value="x_1966159_fcms">5273059f835bcf1010c7c310feaad30e</sys_scope>
+      <sys_package display_value="x_1966159_fcms" source="5273059f835bcf1010c7c310feaad30e">5273059f835bcf1010c7c310feaad30e</sys_package>
+      <sys_name>state</sys_name>
+    </sys_choice_set>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>00cb049c4e564b76ad5b538f73d92063</sys_id>
+      <name>x_1966159_fcms_food_complaint</name>
+      <element>state</element>
+      <label>New</label>
+      <value>new</value>
+      <sequence>1</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>f51962cf4e46450c8bf26fbf53cb1461</sys_id>
+      <name>x_1966159_fcms_food_complaint</name>
+      <element>state</element>
+      <label>In Progress</label>
+      <value>in_progress</value>
+      <sequence>2</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>49762ebb2d414c3b8217a9662ae9816a</sys_id>
+      <name>x_1966159_fcms_food_complaint</name>
+      <element>state</element>
+      <label>On Hold</label>
+      <value>on_hold</value>
+      <sequence>3</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>b729e479d08a4303a3649d9b2aa9dc5d</sys_id>
+      <name>x_1966159_fcms_food_complaint</name>
+      <element>state</element>
+      <label>Resolved</label>
+      <value>resolved</value>
+      <sequence>4</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>2817de94e4c8473f9595b514c785d3c2</sys_id>
+      <name>x_1966159_fcms_food_complaint</name>
+      <element>state</element>
+      <label>Closed</label>
+      <value>closed</value>
+      <sequence>5</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>aab66ac003694532a2eabc3fc8480e9e</sys_id>
+      <name>x_1966159_fcms_food_complaint</name>
+      <element>state</element>
+      <label>Cancelled</label>
+      <value>cancelled</value>
+      <sequence>6</sequence>
+      <language>en</language>
+    </sys_choice>
+  </sys_choice_set>
+</record_update>

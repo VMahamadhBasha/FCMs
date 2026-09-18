@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set action="INSERT_OR_UPDATE" apply_defaults="true" field="use_case" table="x_1966159_fcms_base_problem" version="3">
+    <sys_choice_set action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>8b9b2615a5a34b9d85013f1f0e4046b9</sys_id>
+      <element>use_case</element>
+      <sys_update_name>sys_choice_x_1966159_fcms_base_problem_use_case</sys_update_name>
+      <name>x_1966159_fcms_base_problem</name>
+      <sys_class_name>sys_choice_set</sys_class_name>
+      <sys_scope display_value="x_1966159_fcms">5273059f835bcf1010c7c310feaad30e</sys_scope>
+      <sys_package display_value="x_1966159_fcms" source="5273059f835bcf1010c7c310feaad30e">5273059f835bcf1010c7c310feaad30e</sys_package>
+      <sys_name>use_case</sys_name>
+    </sys_choice_set>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>3a571434fd3749d69b5cd01a0ca07bb2</sys_id>
+      <name>x_1966159_fcms_base_problem</name>
+      <element>use_case</element>
+      <label>Food Quality</label>
+      <value>food_quality</value>
+      <sequence>1</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>1db9f31662b84631915132a926fb6561</sys_id>
+      <name>x_1966159_fcms_base_problem</name>
+      <element>use_case</element>
+      <label>Hygiene</label>
+      <value>hygiene</value>
+      <sequence>2</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>0b60877b31fd44fba76eade29fe83254</sys_id>
+      <name>x_1966159_fcms_base_problem</name>
+      <element>use_case</element>
+      <label>Service</label>
+      <value>service</value>
+      <sequence>3</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>5b9436cd9a0142a996898ac1f379d310</sys_id>
+      <name>x_1966159_fcms_base_problem</name>
+      <element>use_case</element>
+      <label>Menu</label>
+      <value>menu</value>
+      <sequence>4</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>6e693e3ea8654c7f8830a787cfc82db0</sys_id>
+      <name>x_1966159_fcms_base_problem</name>
+      <element>use_case</element>
+      <label>Other</label>
+      <value>other</value>
+      <sequence>5</sequence>
+      <language>en</language>
+    </sys_choice>
+  </sys_choice_set>
+</record_update>

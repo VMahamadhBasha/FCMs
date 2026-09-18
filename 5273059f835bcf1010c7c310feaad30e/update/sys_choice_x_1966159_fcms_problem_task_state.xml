@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set action="INSERT_OR_UPDATE" apply_defaults="true" field="state" table="x_1966159_fcms_problem_task" version="3">
+    <sys_choice_set action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>59292ad1343c4b06ac7dc03f480957c5</sys_id>
+      <element>state</element>
+      <sys_update_name>sys_choice_x_1966159_fcms_problem_task_state</sys_update_name>
+      <name>x_1966159_fcms_problem_task</name>
+      <sys_class_name>sys_choice_set</sys_class_name>
+      <sys_scope display_value="x_1966159_fcms">5273059f835bcf1010c7c310feaad30e</sys_scope>
+      <sys_package display_value="x_1966159_fcms" source="5273059f835bcf1010c7c310feaad30e">5273059f835bcf1010c7c310feaad30e</sys_package>
+      <sys_name>state</sys_name>
+    </sys_choice_set>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>a5598930ee55460e9b83c06d4caf097a</sys_id>
+      <name>x_1966159_fcms_problem_task</name>
+      <element>state</element>
+      <label>Open</label>
+      <value>open</value>
+      <sequence>1</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>c2584d18a00a495a80e779f12afdf8c6</sys_id>
+      <name>x_1966159_fcms_problem_task</name>
+      <element>state</element>
+      <label>In Progress</label>
+      <value>in_progress</value>
+      <sequence>2</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>22add95a5fb74e8b95344046a728f88c</sys_id>
+      <name>x_1966159_fcms_problem_task</name>
+      <element>state</element>
+      <label>Pending</label>
+      <value>pending</value>
+      <sequence>3</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>69de934dc5d9477f86736c1a974bd7e8</sys_id>
+      <name>x_1966159_fcms_problem_task</name>
+      <element>state</element>
+      <label>Resolved</label>
+      <value>resolved</value>
+      <sequence>4</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE" apply_defaults="true">
+      <sys_id>d82c5a1b266541fe8db95c02d5efa9fb</sys_id>
+      <name>x_1966159_fcms_problem_task</name>
+      <element>state</element>
+      <label>Closed</label>
+      <value>closed</value>
+      <sequence>5</sequence>
+      <language>en</language>
+    </sys_choice>
+  </sys_choice_set>
+</record_update>
