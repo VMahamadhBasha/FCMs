@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="4ff7ded0090a4a78bd444d0d43a43088" label="Wastage Log" name="x_1966159_fcms_wastage_log" type="collection">
+        <element label="Reported By" name="reported_by" reference="sys_user" type="reference"/>
+        <element display="true" label="Mess Hall" mandatory="true" name="mess_hall" reference="x_1966159_fcms_mess_hall" type="reference"/>
+        <element label="Quantity Wasted (kg)" mandatory="true" name="quantity_wasted_kg" type="decimal"/>
+        <element label="Meal Type" mandatory="true" name="meal_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Lunch" sequence="2" value="lunch"/>
+                <element inactive_on_update="false" label="Snack" sequence="4" value="snack"/>
+                <element inactive_on_update="false" label="Dinner" sequence="3" value="dinner"/>
+                <element inactive_on_update="false" label="Breakfast" sequence="1" value="breakfast"/>
+            </choice>
+        </element>
+        <element label="Date" mandatory="true" name="date" type="glide_date"/>
+        <index name="index">
+            <element name="mess_hall"/>
+        </index>
+        <index name="index2">
+            <element name="reported_by"/>
+        </index>
+    </element>
+</database>

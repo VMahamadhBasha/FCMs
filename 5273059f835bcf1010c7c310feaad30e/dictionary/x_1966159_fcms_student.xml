@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="633657c15e5c4fbcab611d7f2aa03691" label="Student" name="x_1966159_fcms_student" type="collection">
+        <element label="Allergies" max_length="255" name="allergies" type="string"/>
+        <element label="Dietary Preference" name="dietary_preference" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Vegan" sequence="3" value="vegan"/>
+                <element inactive_on_update="false" label="Eggetarian" sequence="4" value="eggetarian"/>
+                <element inactive_on_update="false" label="Jain" sequence="5" value="jain"/>
+                <element inactive_on_update="false" label="Non-Vegetarian" sequence="2" value="non_vegetarian"/>
+                <element inactive_on_update="false" label="Vegetarian" sequence="1" value="vegetarian"/>
+            </choice>
+        </element>
+        <element label="User" mandatory="true" name="user" reference="sys_user" type="reference"/>
+        <element label="Hostel Name" mandatory="true" max_length="100" name="hostel_name" type="string"/>
+        <element display="true" label="Student ID" mandatory="true" max_length="20" name="student_id" type="string" unique="true"/>
+        <element label="Room Number" mandatory="true" max_length="20" name="room_number" type="string"/>
+        <element label="Mess Hall" mandatory="true" name="mess_hall" reference="x_1966159_fcms_mess_hall" type="reference"/>
+        <index name="index">
+            <element name="mess_hall"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

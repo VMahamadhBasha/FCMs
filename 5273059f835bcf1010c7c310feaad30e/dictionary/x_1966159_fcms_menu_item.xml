@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="f3a5117ce92f449d8f029284c0f4ee02" label="Menu Item" name="x_1966159_fcms_menu_item" type="collection">
+        <element label="Meal Type" mandatory="true" name="meal_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Snack" sequence="4" value="snack"/>
+                <element inactive_on_update="false" label="Breakfast" sequence="1" value="breakfast"/>
+                <element inactive_on_update="false" label="Dinner" sequence="3" value="dinner"/>
+                <element inactive_on_update="false" label="Lunch" sequence="2" value="lunch"/>
+            </choice>
+        </element>
+        <element label="Dietary Tags" max_length="255" name="dietary_tags" type="string"/>
+        <element label="Allergens" max_length="255" name="allergens" type="string"/>
+        <element display="true" label="Item Name" mandatory="true" max_length="100" name="item_name" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="33c608bc862b454293466caaa8f57c9a" label="Problem Task" name="x_1966159_fcms_problem_task" type="collection">
+        <element label="Resolution Type" name="resolution_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Not Reproducible" sequence="3" value="not_reproducible"/>
+                <element inactive_on_update="false" label="Duplicate" sequence="4" value="duplicate"/>
+                <element inactive_on_update="false" label="Workaround" sequence="2" value="workaround"/>
+                <element inactive_on_update="false" label="Fixed" sequence="1" value="fixed"/>
+                <element inactive_on_update="false" label="Won't Fix" sequence="5" value="wont_fix"/>
+            </choice>
+        </element>
+        <element label="AI Reasoning" max_length="4000" name="ai_reasoning" read_only="true" read_only_option="instance_configured" type="string"/>
+        <element label="Not-Resolved Reason" max_length="4000" name="not_resolved_reason" type="string"/>
+        <element display="true" label="Parent Base Problem" mandatory="true" name="parent_base_problem" reference="x_1966159_fcms_base_problem" type="reference"/>
+        <element default="open" label="State" mandatory="true" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="3" value="pending"/>
+                <element inactive_on_update="false" label="Resolved" sequence="4" value="resolved"/>
+                <element inactive_on_update="false" label="Open" sequence="1" value="open"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in_progress"/>
+                <element inactive_on_update="false" label="Closed" sequence="5" value="closed"/>
+            </choice>
+        </element>
+        <element label="Priority" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Critical" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Low" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="Medium" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="2"/>
+            </choice>
+        </element>
+        <element label="SLA / Response Target" name="sla_response_target" reference="contract_sla" type="reference"/>
+        <element label="Assignment Level" name="assignment_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Level 1" sequence="1" value="l1"/>
+                <element inactive_on_update="false" label="Level 3" sequence="3" value="l3"/>
+                <element inactive_on_update="false" label="Level 2" sequence="2" value="l2"/>
+                <element inactive_on_update="false" label="Escalated" sequence="4" value="escalated"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="parent_base_problem"/>
+        </index>
+        <index name="index2">
+            <element name="sla_response_target"/>
+        </index>
+    </element>
+</database>

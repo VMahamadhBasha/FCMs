@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="6ae6f543a5d14ed59cafe786e2fd37bb" label="Base Problem" name="x_1966159_fcms_base_problem" type="collection">
+        <element label="AI Risk Score" name="ai_risk_score" read_only="true" read_only_option="instance_configured" type="decimal"/>
+        <element label="AI Summary" max_length="4000" name="ai_summary" read_only="true" read_only_option="instance_configured" type="string"/>
+        <element label="Problem Type" mandatory="true" max_length="100" name="problem_type" type="string"/>
+        <element label="Open Ticket Count" name="open_ticket_count" read_only="true" read_only_option="instance_configured" type="integer"/>
+        <element label="Use Case" mandatory="true" name="use_case" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Service" sequence="3" value="service"/>
+                <element inactive_on_update="false" label="Hygiene" sequence="2" value="hygiene"/>
+                <element inactive_on_update="false" label="Food Quality" sequence="1" value="food_quality"/>
+                <element inactive_on_update="false" label="Menu" sequence="4" value="menu"/>
+                <element inactive_on_update="false" label="Other" sequence="5" value="other"/>
+            </choice>
+        </element>
+        <element label="Threshold – Critical" name="threshold_critical" type="integer"/>
+        <element display="true" label="Number" max_length="40" name="number" read_only="true" read_only_option="instance_configured" type="string" unique="true"/>
+        <element label="Assigned User" name="assigned_user" reference="sys_user" type="reference"/>
+        <element label="Latest Reported" name="latest_reported" read_only="true" read_only_option="instance_configured" type="glide_date_time"/>
+        <element label="Resolved Ticket Count" name="resolved_ticket_count" read_only="true" read_only_option="instance_configured" type="integer"/>
+        <element label="First Reported" name="first_reported" read_only="true" read_only_option="instance_configured" type="glide_date_time"/>
+        <element label="Threshold – Medium" name="threshold_medium" type="integer"/>
+        <element label="First Ticket" name="first_ticket" read_only="true" read_only_option="instance_configured" reference="x_1966159_fcms_food_complaint" type="reference"/>
+        <element label="Recommended Action" max_length="4000" name="recommended_action" read_only="true" read_only_option="instance_configured" type="string"/>
+        <element label="Current Priority" name="current_priority" read_only="true" read_only_option="instance_configured" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Medium" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Low" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="Critical" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="High" sequence="2" value="2"/>
+            </choice>
+        </element>
+        <element label="Priority Reason" max_length="4000" name="priority_reason" read_only="true" read_only_option="instance_configured" type="string"/>
+        <element default="new" label="Status" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Closed" sequence="6" value="closed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="4" value="in_progress"/>
+                <element inactive_on_update="false" label="New" sequence="1" value="new"/>
+                <element inactive_on_update="false" label="Investigating" sequence="2" value="investigating"/>
+                <element inactive_on_update="false" label="Resolved" sequence="5" value="resolved"/>
+                <element inactive_on_update="false" label="Action Planned" sequence="3" value="action_planned"/>
+            </choice>
+        </element>
+        <element label="Assigned Group" name="assigned_group" reference="sys_user_group" type="reference"/>
+        <element label="Student Count" name="student_count" read_only="true" read_only_option="instance_configured" type="integer"/>
+        <element label="Ticket Count" name="ticket_count" read_only="true" read_only_option="instance_configured" type="integer"/>
+        <element label="Mess Hall" mandatory="true" name="mess_hall" reference="x_1966159_fcms_mess_hall" type="reference"/>
+        <element label="Threshold – High" name="threshold_high" type="integer"/>
+        <element label="Latest Ticket" name="latest_ticket" read_only="true" read_only_option="instance_configured" reference="x_1966159_fcms_food_complaint" type="reference"/>
+        <element label="Category" mandatory="true" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Freshness" sequence="2" value="freshness"/>
+                <element inactive_on_update="false" label="Delay" sequence="8" value="delay"/>
+                <element inactive_on_update="false" label="Missing Item" sequence="9" value="missing_item"/>
+                <element inactive_on_update="false" label="Foreign Object" sequence="4" value="foreign_object"/>
+                <element inactive_on_update="false" label="Taste" sequence="1" value="taste"/>
+                <element inactive_on_update="false" label="Temperature" sequence="5" value="temperature"/>
+                <element inactive_on_update="false" label="Portion Size" sequence="3" value="portion_size"/>
+                <element inactive_on_update="false" label="Other" sequence="10" value="other"/>
+                <element inactive_on_update="false" label="Cleanliness" sequence="6" value="cleanliness"/>
+                <element inactive_on_update="false" label="Staff Behavior" sequence="7" value="staff_behavior"/>
+            </choice>
+        </element>
+        <element label="Knowledge Insights" max_length="4000" name="knowledge_insights" read_only="true" read_only_option="instance_configured" type="string"/>
+        <index name="index">
+            <element name="assigned_group"/>
+        </index>
+        <index name="index2">
+            <element name="assigned_user"/>
+        </index>
+        <index name="index3">
+            <element name="first_ticket"/>
+        </index>
+        <index name="index4">
+            <element name="latest_ticket"/>
+        </index>
+        <index name="index5">
+            <element name="mess_hall"/>
+        </index>
+    </element>
+</database>
